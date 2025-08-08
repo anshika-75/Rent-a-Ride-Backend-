@@ -67,6 +67,7 @@ export const getUserData = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+//get all cars for the frontend
 export const getCars = async (req, res) => {
   try {
     const cars = await Car.find({ isAvailable: true });
